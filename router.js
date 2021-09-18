@@ -13,7 +13,7 @@ router.post('/applyJob', applyJob);
 router.post('/getMyPostedRefferal', myPostedRefral);
 router.post('/appliedRefral',appliedRefrel);
 router.post('/getAllCandidate',getAppliedCandidate);
-router.post('/shortlistProfile', shortlistProfile)
+router.post('/shortlistProfile', shortlistProfile);
 
 
 module.exports = router;

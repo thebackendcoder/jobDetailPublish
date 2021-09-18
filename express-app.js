@@ -5,7 +5,7 @@ const cors = require('cors');
 const dotenvJSON = require('dotenv-json');
 const mongoose = require('mongoose');
 
-const env = process.env.NODE_ENV || 'local';
+const env = process.env.NODE_ENV || 'dev';
 dotenvJSON({ path: `./config.${env}.json` });
 
 const router = require('./router.js')
