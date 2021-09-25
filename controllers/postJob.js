@@ -8,8 +8,7 @@ async function postJob(req, res) {
     try {
         const user = jwt.verify(token, jwtSecret);
         console.log(user)
-        const referedBy = user.id;
-        const userMail = user.username;
+        const userMail = user.email;
         console.log(userMail)
         if (userMail != contactEmail) {
             res.status(400).json({
@@ -22,7 +21,7 @@ async function postJob(req, res) {
                 contactEmail,
                 contactNumber,
                 jobDescription,
-                referedBy
+                referedBy: userMail
             })
             console.log(dbResponse);
             res.status(200).json({

@@ -7,11 +7,10 @@ async function applyJobs(req, res) {
     const { token, refralId } = req.body;
     try {
         const user = jwt.verify(token, jwtSecret);
-        const userMail = user.username;
-        const userId = user.id;
+        const userMail = user.email;
         const currentlyShortlisted = false
         const userDetail = {
-            userMail, userId, currentlyShortlisted
+            userMail,currentlyShortlisted
         }
         const job = await model.generatedJob.findById({ _id: refralId });
         let applied = []
