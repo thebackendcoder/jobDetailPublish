@@ -15,9 +15,9 @@ async function appliedReferal(req, res) {
             let employee;
             val.appliedBy.filter((emp) => {
                 if (emp.userMail == userMail) {
-                    employee =emp;
+                    employee = emp;
                 }
-            }) 
+            })
             const ob = {
                 "Reffral Id": val._id,
                 "Post": val.post,
