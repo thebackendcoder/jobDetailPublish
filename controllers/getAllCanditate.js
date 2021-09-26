@@ -7,8 +7,8 @@ async function getAllCandidate(req, res) {
     const { token, refId } = req.body;
     try {
         const user = jwt.verify(token, jwtSecret);
-        const email = user.username
-        
+        const email = user.email;
+
         const job = await model.generatedJob.findOne({ _id: refId });
         console.log(email)
         console.log(job.contactEmail)

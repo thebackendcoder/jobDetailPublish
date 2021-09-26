@@ -7,7 +7,7 @@ async function appliedReferal(req, res) {
         const { token } = req.body;
         const user = jwt.verify(token, jwtSecret);
         console.log(user);
-        const userMail = user.username
+        const userMail = user.email
         console.log(userMail)
         const allAppliedJob = await model.generatedJob.find({ "appliedBy.userMail": userMail });
 

@@ -10,7 +10,7 @@ async function applyJobs(req, res) {
         const userMail = user.email;
         const currentlyShortlisted = false
         const userDetail = {
-            userMail,currentlyShortlisted
+            userMail, currentlyShortlisted
         }
         const job = await model.generatedJob.findById({ _id: refralId });
         let applied = []

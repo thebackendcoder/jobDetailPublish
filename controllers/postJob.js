@@ -21,7 +21,6 @@ async function postJob(req, res) {
                 contactEmail,
                 contactNumber,
                 jobDescription,
-                referedBy: userMail
             })
             console.log(dbResponse);
             res.status(200).json({

@@ -8,7 +8,7 @@ async function postedReferal(req, res) {
         const user = jwt.verify(token, jwtSecret);
         console.log(user);
         const userEmail = user.email;
-        const allPostedJob = await model.generatedJob.find({ referedBy: userEmail });
+        const allPostedJob = await model.generatedJob.find({ contactEmail : userEmail });
         res.send(allPostedJob);
     }
     catch (err) {

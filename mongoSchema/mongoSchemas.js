@@ -10,7 +10,6 @@ const Job = new mongoose.Schema({
     contactEmail: { type: String, required: true },
     contactNumber: { type: Number, required: true },
     jobDescription: { type: String, required: true },
-    referedBy: { type: String, required: true },
     appliedBy: { type: Array },
 
 }, { collection: "availableJobs" });
