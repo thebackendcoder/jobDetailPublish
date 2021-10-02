@@ -1,10 +1,4 @@
 {
-    "dbString":"mongodb+srv://myuser:fathermother@learningcluster.6hufy.mongodb.net/myStartupUser?retryWrites=true&w=majority",
-    "jwtSecret": "ksiufwifckjdsfcgeudgfciwdknjfuhuuhuhuh",
-    "baseUrl":"http://localhost:8000",
-    "senderMail": "thebackendcoder@gmail.com",
-    "accessKeyId": "AKIAXIM2V4E7W3BEIM4Z",
-    "secretAccessKey": "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"
 }
 
 
